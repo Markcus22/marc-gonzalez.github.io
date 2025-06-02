@@ -1,81 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marc González - Blockchain Developer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc González | Blockchain Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
     header {
-      background-color: #2d2d2d;
-      color: white;
-      padding: 2rem;
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 3rem 2rem;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #bbb;
     }
     section {
-      padding: 2rem;
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .project {
-      background: white;
-      padding: 1rem;
+    h2 {
+      font-size: 1.8rem;
+      color: #1e1e2f;
       margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
+    .project, .skills, .contact {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .project h3 {
+      color: #007acc;
     }
     a {
-      color: #007bff;
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: "✔";
+      color: #007acc;
+      margin-right: 0.5rem;
+    }
+    .contact p {
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Marc Vicent González Salcedo</h1>
-    <p>Blockchain & Full Stack Developer | Passion for ZKP, Tokenization & Web3</p>
+    <p>Blockchain & Full Stack Developer | ZKP • Tokenization • Web3 Enthusiast</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>I am a proactive and innovation-driven developer with experience in smart contracts, tokenization, and blockchain applications. Currently leading a personal project focused on maritime logistics digitalization using ZKP and Web3.</p>
+    <div class="project">
+      <p>I’m a passionate developer focused on creating secure, scalable, and innovative blockchain solutions. From smart contracts to full stack Web3 apps, I specialize in applying cutting-edge technologies like Zero-Knowledge Proofs, tokenization, and decentralized architectures.</p>
+    </div>
   </section>
 
   <section>
     <h2>Projects</h2>
     <div class="project">
       <h3>Tax Flow Technologies</h3>
-      <p>Blockchain-based platform for tokenizing maritime documentation. Implemented smart contracts, digital wallets, and ZKPs to ensure secure, verifiable, and private interactions.</p>
-      <a href="https://github.com/Markcus22/token-burocraty" target="_blank">View on GitHub</a>
+      <p>A blockchain-based platform for the maritime industry, enabling tokenization of bureaucratic processes and secure, ZKP-based verification mechanisms.</p>
+      <p><strong>Stack:</strong> Solidity, ZKP, Web3.js, Ethers.js, Digital Wallets</p>
+      <a href="https://github.com/Markcus22/token-burocraty" target="_blank">🔗 View Project on GitHub</a>
     </div>
-    <!-- Puedes añadir más proyectos aquí -->
   </section>
 
   <section>
     <h2>Skills</h2>
-    <ul>
-      <li>Smart Contracts (Solidity, Rust)</li>
-      <li>Web3.js / Ethers.js / Tokenization</li>
-      <li>Zero-Knowledge Proofs (ZKP)</li>
-      <li>Python, Django, JavaScript</li>
-      <li>DevOps, GitHub Actions, Docker</li>
-    </ul>
+    <div class="skills">
+      <ul>
+        <li>Smart Contracts (Solidity, Rust)</li>
+        <li>Web3 Development (Web3.js, Ethers.js)</li>
+        <li>Zero-Knowledge Proofs (ZKP)</li>
+        <li>Python, Django, JavaScript</li>
+        <li>Cloud & DevOps (Docker, GitHub Actions)</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="contact">
+  <section>
     <h2>Contact</h2>
-    <p>Email: marcvgonsal@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/marc-gonzalez-salcedo" target="_blank">marc-gonzalez-salcedo</a></p>
+    <div class="contact">
+      <p><strong>Email:</strong> marcvgonsal@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marc-gonzalez-salcedo" target="_blank">marc-gonzalez-salcedo</a></p>
+    </div>
   </section>
 </body>
 </html>
